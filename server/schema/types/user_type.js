@@ -1,4 +1,4 @@
-const graphql from 'graphql';
+const graphql = require('graphql');
 const {
 	GraphQLObjectType,
 	GraphQLString
@@ -7,7 +7,7 @@ const {
 const UserType = new GraphQLObjectType({
 	name: 'UserType',
 	fields: {
-		email : { new GraphQLString }
+		email : { type: GraphQLString }
 	}
 });
 
