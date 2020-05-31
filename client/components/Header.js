@@ -13,7 +13,7 @@ class Header extends React.Component {
 
 	renderButtons() {
 		const { loading, user } = this.props.data;
-		if (loading) { return <div />};
+		if (loading) { return <div /> };
 
 		if (user) {
 			return (

@@ -34,7 +34,13 @@ class AuthForm extends React.Component {
 							onChange={e => this.setState({ password: e.target.value })}
 						/>
 					</div>
+
 					<button className="btn">Submit</button>
+
+					<div className="errors">
+						{ this.props.errors.map(error =>
+							<div key={error} style={{ color: "red", marginTop: 10 }}>{error}</div>) }
+					</div>
 				</form>
 			</div>
 		)
