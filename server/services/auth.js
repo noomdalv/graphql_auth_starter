@@ -58,8 +58,10 @@ function signup({ email, password, req }) {
     })
     .then(user => {
       return new Promise((resolve, reject) => {
+				console.log("notlogin", req.user)
         req.logIn(user, (err) => {
           if (err) { reject(err); }
+					console.log("login", req.user)
           resolve(user);
         });
       });
