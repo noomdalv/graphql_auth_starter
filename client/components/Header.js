@@ -33,12 +33,12 @@ class Header extends React.Component {
 		}
 	}
 
-	render() {		
+	render() {
 		return (
 			<nav>
 				<div className="nav-wrapper">
-					<Link to="/" className="brand-logo left">
-						Home
+					<Link to="/" className="brand-logo">
+						GraphQL Authentication System
 					</Link>
 					<ul className="right">
 						{ this.renderButtons() }

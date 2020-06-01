@@ -18,7 +18,7 @@ class AuthForm extends React.Component {
 	render() {
 		return (
 			<div className="row">
-				<form onSubmit={this.onSubmit.bind(this)} className="col s6">
+				<form onSubmit={this.onSubmit.bind(this)} className="col s4 offset-s4 center">
 					<div className="input-field">
 						<input
 							placeholder="Email"
