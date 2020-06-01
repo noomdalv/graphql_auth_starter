@@ -57,11 +57,9 @@ function signup({ email, password, req }) {
       return user.save();
     })
     .then(user => {
-      return new Promise((resolve, reject) => {
-				console.log("notlogin", req.user)
+      return new Promise((resolve, reject) => {				
         req.logIn(user, (err) => {
           if (err) { reject(err); }
-					console.log("login", req.user)
           resolve(user);
         });
       });

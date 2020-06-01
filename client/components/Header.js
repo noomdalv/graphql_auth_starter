@@ -33,8 +33,7 @@ class Header extends React.Component {
 		}
 	}
 
-	render() {
-		console.log(this.props.data)
+	render() {		
 		return (
 			<nav>
 				<div className="nav-wrapper">
