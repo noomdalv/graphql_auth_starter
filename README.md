@@ -1,6 +1,6 @@
 ## GraphQL Authentication Starter App
 
-This application consists in a basic user authentication system using PassportJS and GraphQL technologies, it was created following this [Boilerplate Setup](https://github.com/stephengrider/auth-graphql-starter).
+This application consists in a basic user authentication system using PassportJS and GraphQL technologies, it was created following <i>Stephen Grider's<i> [Project Boilerplate](https://github.com/stephengrider/auth-graphql-starter).
 Users can sign up in the application and PassportJS handles the authentication, storing a session cookie in the database which remains until the user logs out of the session.
 
 ## Built With
